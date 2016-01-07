@@ -57,25 +57,25 @@ print(fig2,'-depsc','s_30.eps')
 
 
 
-% % Radius R
-% fig3 = figure;
-% for j=FourDiscP
-%     plot(solT_end(1:bis)/3600,solR(1:bis,j)*1e6,'k');
-%     xlabel('$t\ [h]$','Interpreter','latex')
-%     ylabel('$r\ [\mu m]$','Interpreter','latex')
-% end
-% print(fig3,'-depsc','r_30.eps')
-% 
-% 
-% 
-%  % Water volume U
-% fig4 = figure;
-% for j=FourDiscP
-%     plot(solT_end(1:bis)/3600,solU(1:bis,j)*1e18,'k');
-%     xlabel('$t\ [h]$','Interpreter','latex')
-%     ylabel('$U\ [\mu m^3]$','Interpreter','latex')
-% end
-% print(fig4,'-depsc','U_30.eps')
+% Radius R
+fig3 = figure;
+for j=FourDiscP
+    plot(solT_end(1:bis)/3600,solR(1:bis,j)*1e6,'k');
+    xlabel('$t\ [h]$','Interpreter','latex')
+    ylabel('$r\ [\mu m]$','Interpreter','latex')
+end
+print(fig3,'-depsc','r_30.eps')
+ 
+ 
+ 
+ % Water volume U
+fig4 = figure;
+for j=FourDiscP
+    plot(solT_end(1:bis)/3600,solU(1:bis,j)*1e18,'k');
+    xlabel('$t\ [h]$','Interpreter','latex')
+    ylabel('$U\ [\mu m^3]$','Interpreter','latex')
+end
+print(fig4,'-depsc','U_30.eps')
 
 
 

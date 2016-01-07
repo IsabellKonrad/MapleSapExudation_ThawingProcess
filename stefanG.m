@@ -1,3 +1,14 @@
+% Run this file to newly calculate the solution of the thawing process. The solution, from where
+% the figures for the paper are generated, is already calculated and saved in the folder Data_solution.
+% To plot the already solved and saved solution, run plot_all.m
+% To newly calculate the solution or play with the code, run this file. Here more information:
+% Parameters for the model are saved in the file params_stefan.m, 
+% the macroscopic ODE is solved using ode15s with stefanG.m and fun_stefanG.m, 
+% the microscopic ODE is solved using ode15s with stefanL.m and fun_stefanL.m (G for globa, L for local),
+% the file event_melted_s.m is needed for the Maltab feature 'Events';
+% Because it takes a while to calculate the solution, the function plot_help shows the progress.
+
+
 clear all
 close all
 clc
